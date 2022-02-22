@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        div {
+            margin-top: 0px;
+            
+        }
+        #total{
+            padding-top: 4px;
+            padding-bottom: 4px;
+            border-radius: 10px;
+            font-weight: bolder;
+            font-size: 13px;
+        }
+        #num1 {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10 px;
+            border-radius: 10px;
+        }
+        #num2 {
+            padding-top: 4px;
+            padding-bottom: 4px;
+            display: block;
+            margin-bottom: 10px;
+            margin-top: 10 px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: rgb(0, 23, 128);
+            color: aliceblue;
+            border-radius: 10px;
+            width: 170px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sum Digits</h1>
+    </header>
+    <section>
+        Num1 <input id="num1" type="number" value="number">
+        Num2 <input id="num2" type="number" value="number">
+        <button onclick="sum()">SUM</button>
+        <p>Total</p>
+       <div><input type="text" name="Toatal" id="total" value=""> </div>  
+    </section>
+    <script>
+        function sum() {
+            let a = document.getElementById('num1')
+            let b = document.getElementById('num2')
+            let sum = Number(a.value) + Number(b.value)
+            let post = document.getElementById('total')
+            post.value = sum
+        }
+    </script>
+</body>
+
+</html>
